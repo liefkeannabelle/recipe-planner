@@ -5,7 +5,8 @@ const Units = Object.freeze({
   LBS: 'pounds',
   TBSP: 'tbsp',
   TSP: 'tsp',
-  G: 'gram'
+  G: 'gram', 
+  SRV: 'serving'
 });
 
 // will want to add enums for tags and potentially ingredients

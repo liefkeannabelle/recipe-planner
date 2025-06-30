@@ -1,14 +1,22 @@
-function CreateRecipeCard() {
-// will want to have user input:
-// 1. recipe name
-// 2. ingredients: name, quantity, units
-// 3. how many servings it makes 
-// maybe add: tags of recipe types, rating
+import React from 'react';
 
-// will want to do behind the scenes:
-// 1. scale according to # of servings for week's worth of meal
-// 2. calculate the macro information for one serving of the meal
-
+function RecipeCard({ recipe, onAddToMealPlan }) {
+  return (
+    <div className="recipe-card">
+      <h3>{recipe.name}</h3>
+      <ul>
+        {recipe.ingredients.map((ing, i) => (
+          <li key={i}>{ing.quantity} {ing.unit} {ing.name}</li>
+        ))}
+      </ul>
+      <p>{recipe.instructions}</p>
+      <div>
+        <button onClick={() => onAddToMealPlan('breakfast', recipe.id)}>Breakfast</button>
+        <button onClick={() => onAddToMealPlan('lunch', recipe.id)}>Lunch</button>
+        <button onClick={() => onAddToMealPlan('dinner', recipe.id)}>Dinner</button>
+      </div>
+    </div>
+  );
 }
 
-export default CreateRecipeCard;
+export default RecipeCard;
