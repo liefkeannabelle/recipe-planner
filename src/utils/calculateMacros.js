@@ -1,4 +1,4 @@
-import ingredientBank from "../data/ingredientBank";
+import matchIng from "./matchIng";
 
 export function calculateMacros(selectedRecipes) {
   const macrosPerMeal = {};
@@ -12,17 +12,8 @@ export function calculateMacros(selectedRecipes) {
     let totalCalories = 0;
     let totalProtein = 0;
 
-    recipe.ingredients.forEach(({ name, quantity, unit }) => {
-      const ingInfo = ingredientBank.find(ing => ing.name === name);
-      if (!ingInfo) {
-        console.warn(`Ingredient "${name}" not found in ingredient bank.`);
-        return;
-      }
-
-      if (ingInfo.unit !== unit) {
-        console.warn(`Unit mismatch for "${name}": recipe uses "${unit}", bank uses "${ingInfo.unit}"`);
-        return;
-      }
+    recipe.ingredients.forEach(({ name, unit, quantity }) => {
+      const ingInfo = matchIng(name, unit);
 
       totalCalories += (quantity * ingInfo.calories) / recipe.servings;
       totalProtein += (quantity * ingInfo.protein) / recipe.servings;

@@ -19,8 +19,9 @@ function IntakeDetails({ selectedRecipes }) {
                         {calories} cal, {protein}g protein
                     </li>
                 ))}
-                <li> <strong>Total: </strong> {totalCals} cal, {totalPro}g protein </li>
+                <li><strong>Total: </strong> {totalCals} cal, {totalPro}g protein</li>
             </ul>
+            
         )}
         </div>
     );

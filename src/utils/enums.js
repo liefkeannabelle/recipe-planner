@@ -9,7 +9,15 @@ const Units = Object.freeze({
   SRV: 'serving'
 });
 
+const IngTypes = Object.freeze({
+  M : 'meat',
+  DE : 'dairy/eggs',
+  CS : 'carb/starch',
+  P : 'produce',
+  O : 'other'
+})
+
 // will want to add enums for tags and potentially ingredients
 
-export {Units}
+export {Units, IngTypes}
 

@@ -9,7 +9,8 @@ import { Units } from '../utils/enums.js';
       { name: "", quantity: , unit: Units. },
       { name: "", quantity: , unit: Units. },
     ],
-    servings: 
+    servings: ,
+    description: ""
   }
 */
 
@@ -24,7 +25,8 @@ const recipes = [
       { name: "Cauliflower Rice", quantity: 2, unit: Units.CNTR },
       { name: "Bulgogi Sauce", quantity: 12, unit: Units.SRV }
     ],
-    servings: 6
+    servings: 6, 
+    description: "Korean-inspired bowls with bulgogi beef and carrots over cauliflower rice."
   },
   {
     id: '2',
@@ -37,7 +39,8 @@ const recipes = [
       { name: "Plant-Based Queso", quantity: 1, unit: Units.CNTR},
       { name: "Avocado", quantity: 3, unit: Units.PC}
     ],
-    servings: 6
+    servings: 6,
+    description: "Taco-seasoned chicken over lettuce with corn, beans, and queso."
   },
     {
     id: '3',
@@ -48,7 +51,8 @@ const recipes = [
       { name: "Strawberries", quantity: 2, unit: Units.LB },
       { name: "Kiwis", quantity: 6, unit: Units.PC },
     ],
-    servings: 6
+    servings: 6,
+    description: "Eggs, chicken sausage, and fruit."
   }
 ];
 
