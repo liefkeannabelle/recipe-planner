@@ -1,4 +1,6 @@
 import React from 'react';
+import makeReadable from '../utils/readabilityHelper';
+import { Units } from '../utils/enums';
 
 function GroceryList({ recipes, mealPlan }) {
     const selectedRecipes = Object.values(mealPlan)
@@ -18,6 +20,7 @@ function GroceryList({ recipes, mealPlan }) {
     });
 
     const combinedIngredients = Object.values(ingredientMap);
+    const pluralCombIng = makeReadable(combinedIngredients);
 
     return (
         <div>
@@ -26,9 +29,9 @@ function GroceryList({ recipes, mealPlan }) {
             <p>No meals selected yet.</p>
         ) : (
             <ul>
-            {combinedIngredients.map((ing, i) => (
+            {pluralCombIng.map((ing, i) => (
                 <li key={i}>
-                {ing.quantity} {ing.unit} {ing.name}
+                {ing.quantity} {ing.newUnit} {ing.name}
                 </li>
             ))}
             </ul>

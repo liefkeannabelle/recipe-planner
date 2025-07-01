@@ -1,8 +1,8 @@
 const Units = Object.freeze({
-  CUPS: 'cups',
-  PCS: 'pieces',
+  CUP: 'cup',
+  PC: 'piece',
   CNTR: 'container',
-  LBS: 'pounds',
+  LB: 'pound',
   TBSP: 'tbsp',
   TSP: 'tsp',
   G: 'gram', 

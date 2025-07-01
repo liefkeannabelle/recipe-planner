@@ -1,11 +1,14 @@
 import React from 'react';
+import makeReadable from '../utils/readabilityHelper';
 
 function RecipeCard({ recipe, onAddToMealPlan }) {
+  const readableIngredients = makeReadable(recipe.ingredients);
+
   return (
     <div className="recipe-card">
       <h3>{recipe.name}</h3>
       <ul>
-        {recipe.ingredients.map((ing, i) => (
+        {readableIngredients.map((ing, i) => (
           <li key={i}>{ing.quantity} {ing.unit} {ing.name}</li>
         ))}
       </ul>
