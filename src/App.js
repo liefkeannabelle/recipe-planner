@@ -4,6 +4,7 @@ import RecipeCard from './components/RecipeCard';
 import MealSelection from './components/MealSelection';
 import GroceryList from './components/GroceryList';
 import IntakeDetails from './components/IntakeDetails.jsx';
+import RecipeBook from './components/RecipeBook.jsx';
 
 function App() {
   // mealPlan = IDs of the user's selected meals
@@ -43,14 +44,10 @@ function App() {
 
       <hr />
 
-      <h2>📚 Recipe Book </h2>
-      {recipesData.map(recipe => (
-        <RecipeCard
-          key={recipe.id}
-          recipe={recipe}
-          onAddToMealPlan={handleSetMeal}
-        />
-      ))}
+      <RecipeBook
+        recipes={recipesData}
+        onAddToMealPlan={handleSetMeal}
+      />
 
       <hr />
 

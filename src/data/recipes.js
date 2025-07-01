@@ -1,16 +1,17 @@
-import { Units } from '../utils/enums.js';
+import { Units, MealTypes } from '../utils/enums.js';
 /* TEMPLATE
   {
     id: increment,
     name: "",
     ingredients: [
       { name: "", quantity: , unit: Units. },
-      { name: "", quantity: , unit: Units.},
+      { name: "", quantity: , unit: Units. },
       { name: "", quantity: , unit: Units. },
       { name: "", quantity: , unit: Units. },
     ],
     servings: ,
-    description: ""
+    description: "",
+    mealType: []
   }
 */
 
@@ -26,7 +27,8 @@ const recipes = [
       { name: "Bulgogi Sauce", quantity: 12, unit: Units.SRV }
     ],
     servings: 6, 
-    description: "Korean-inspired bowls with bulgogi beef and carrots over cauliflower rice."
+    description: "Korean-inspired bowls with bulgogi beef and carrots over cauliflower rice.",
+    mealType: [MealTypes.D, MealTypes.L]
   },
   {
     id: '2',
@@ -40,7 +42,8 @@ const recipes = [
       { name: "Avocado", quantity: 3, unit: Units.PC}
     ],
     servings: 6,
-    description: "Taco-seasoned chicken over lettuce with corn, beans, and queso."
+    description: "Taco-seasoned chicken over lettuce with corn, beans, and queso.",
+    mealType: [MealTypes.D, MealTypes.L]
   },
     {
     id: '3',
@@ -52,7 +55,11 @@ const recipes = [
       { name: "Kiwis", quantity: 6, unit: Units.PC },
     ],
     servings: 6,
-    description: "Eggs, chicken sausage, and fruit."
+    description: "Eggs, chicken sausage, and fruit.",
+    mealType: [MealTypes.BF]
+    // breakfast: true,
+    // lunch: false,
+    // dinner: false
   }
 ];
 

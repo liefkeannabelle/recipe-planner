@@ -1,15 +1,19 @@
 import React from 'react';
 
-function RecipeCard({ recipe, onAddToMealPlan }) {
+function RecipeCard({ recipe, onAddToMealPlan, meal}) {
   return (
     <div className="recipe-card">
-      <h3>{recipe.name}</h3>
+      <button onClick={() => onAddToMealPlan(meal, recipe.id)}
+          style={{
+          padding: '8px 16px',
+          marginRight: '8px',
+          borderRadius: '6px',
+          backgroundColor: '#e7f0ff',
+          cursor: 'pointer',
+    }}>
+      {recipe.name}
+    </button>
       <p>{recipe.description}</p>
-      <div>
-        <button onClick={() => onAddToMealPlan('breakfast', recipe.id)}>Breakfast</button>
-        <button onClick={() => onAddToMealPlan('lunch', recipe.id)}>Lunch</button>
-        <button onClick={() => onAddToMealPlan('dinner', recipe.id)}>Dinner</button>
-      </div>
     </div>
   );
 }
