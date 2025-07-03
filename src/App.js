@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import recipesData from './data/recipes.js';
-import RecipeCard from './components/RecipeCard';
-import MealSelection from './components/MealSelection';
 import GroceryList from './components/GroceryList';
 import IntakeDetails from './components/IntakeDetails.jsx';
 import RecipeBook from './components/RecipeBook.jsx';
@@ -47,14 +45,6 @@ function App() {
       <RecipeBook
         recipes={recipesData}
         onAddToMealPlan={handleSetMeal}
-      />
-
-      <hr />
-
-      <MealSelection
-        recipes={recipesData}
-        mealPlan={mealPlan}
-        onSetMeal={handleSetMeal}
       />
 
       <hr />

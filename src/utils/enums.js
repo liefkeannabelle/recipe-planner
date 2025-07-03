@@ -6,7 +6,8 @@ const Units = Object.freeze({
   TBSP: 'tbsp',
   TSP: 'tsp',
   G: 'gram', 
-  SRV: 'serving'
+  SRV: 'serving',
+  PT: 'pint'
 });
 
 const IngTypes = Object.freeze({

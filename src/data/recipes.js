@@ -45,7 +45,7 @@ const recipes = [
     description: "Taco-seasoned chicken over lettuce with corn, beans, and queso.",
     mealType: [MealTypes.D, MealTypes.L]
   },
-    {
+  {
     id: '3',
     name: "Breakfast Plate",
     ingredients: [
@@ -57,9 +57,22 @@ const recipes = [
     servings: 6,
     description: "Eggs, chicken sausage, and fruit.",
     mealType: [MealTypes.BF]
-    // breakfast: true,
-    // lunch: false,
-    // dinner: false
+  },
+  {
+    id: 4,
+    name: "Chocolate Raspberry Oats",
+    ingredients: [
+      { name: "Oatmeal", quantity: 6, unit: Units.SRV },
+      { name: "Granola", quantity: 6, unit: Units.SRV },
+      { name: "Raspberries", quantity: 2, unit: Units.PT },
+      { name: "Dark Chocolate", quantity: 6, unit: Units.SRV },
+      { name: "Almond Milk", quantity: 6, unit: Units.SRV},
+      { name: "Yogurt", quantity: 6, unit: Units.SRV},
+      { name: "Maple Syrup", quantity: 6, unit: Units.TBSP}
+    ],
+    servings: 6,
+    description: "Oats with rasperries, dark chocolate, yogurt, and granola.",
+    mealType: [MealTypes.BF]
   }
 ];
 

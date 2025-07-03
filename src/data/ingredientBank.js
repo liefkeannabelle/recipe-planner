@@ -10,9 +10,13 @@ const ingredientBank = [
     {name: "Ground Beef", type: IngTypes.M, unit: Units.LB, calories: 690, protein: 96},
     //DAIRY/EGGS
     {name: "Eggs", type: IngTypes.DE, unit: Units.PC, calories: 90, protein: 8},
+    {name: "Yogurt", type: IngTypes.DE, unit: Units.SRV, calories: 70, protein: 12},
+    {name: "Almond Milk", type: IngTypes.DE, unit: Units.SRV, calories: 30, protein: 1},
     //CARBS/STARCHES
     {name: "Cauliflower Rice", type: IngTypes.CS, unit: Units.CNTR, calories: 90, protein: 9},
     {name: "Frozen Corn", type: IngTypes.CS, unit: Units.CNTR, calories: 300, protein: 0},
+    {name: "Oatmeal", type: IngTypes.CS, unit: Units.SRV, calories: 100, protein: 0},
+    {name: "Granola", type: IngTypes.CS, unit: Units.SRV, calories: 150, protein: 0},
     //PRODUCE
     {name: "Avocado", type: IngTypes.P, unit: Units.PC, calories: 150, protein: 0},
     {name: "Black Beans", type: IngTypes.P, unit: Units.CNTR, calories: 300, protein: 5},
@@ -21,9 +25,12 @@ const ingredientBank = [
     {name: "Greens", type: IngTypes.P, unit: Units.CNTR, calories: 50, protein: 0},
     {name: "Kiwis", type: IngTypes.P, unit: Units.PC, calories: 45, protein: 0},
     {name: "Strawberries", type: IngTypes.P, unit: Units.LB, calories: 150, protein: 0},
+    {name: "Raspberries", type: IngTypes.P, unit: Units.PT, calories: 150, protein: 0},
     //OTHER
     {name: "Bulgogi Sauce", type: IngTypes.O, unit: Units.SRV, calories: 35, protein: 0},
-    {name: "Plant-Based Queso", type: IngTypes.O, unit: Units.CNTR, calories: 300, protein: 10}
+    {name: "Plant-Based Queso", type: IngTypes.O, unit: Units.CNTR, calories: 300, protein: 10},
+    {name: "Dark Chocolate", type: IngTypes.O, unit: Units.SRV, calories: 50, protein: 0},
+    {name: "Maple Syrup", type: IngTypes.O, unit: Units.TBSP, calories: 90, protein: 0}
 ];
 
 export default ingredientBank;
