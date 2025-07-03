@@ -60,7 +60,7 @@ return (
         )}
         {formattedIngCS.length > 0 && (
           <div>
-            <h3>🥫 Canned & Shelf-Stable</h3>
+            <h3>🌾Carbs & Starches</h3>
             <ul>
               {formattedIngCS.map((ing, i) => (
                 <li key={`cs-${i}`}>

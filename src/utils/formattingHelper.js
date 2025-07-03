@@ -7,9 +7,12 @@ function format(combinedIngredients, compType){
         const ingInfo = matchIng(name, unit);
         if(ingInfo.type === compType){
             let newUnit = unit;
-            const newName = name.toLowerCase();
+            let newName = name.toLowerCase();
             if(unit === Units.PC){
                 newUnit = "";
+                if(Number(quantity) > 1){
+                    newName += "s";
+                }
             }else if(Number(quantity) > 1){
                 newUnit += "s";
             }

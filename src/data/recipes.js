@@ -1,7 +1,7 @@
-import { Units, MealTypes } from '../utils/enums.js';
+import { Units, MealTypes, Tags } from '../utils/enums.js';
 /* TEMPLATE
   {
-    id: increment,
+    id: 'increment',
     name: "",
     ingredients: [
       { name: "", quantity: , unit: Units. },
@@ -11,7 +11,8 @@ import { Units, MealTypes } from '../utils/enums.js';
     ],
     servings: ,
     description: "",
-    mealType: []
+    mealType: [],
+    tags: []
   }
 */
 
@@ -28,7 +29,8 @@ const recipes = [
     ],
     servings: 6, 
     description: "Korean-inspired bowls with bulgogi beef and carrots over cauliflower rice.",
-    mealType: [MealTypes.D, MealTypes.L]
+    mealType: [MealTypes.D, MealTypes.L],
+    tags: [Tags.MP]
   },
   {
     id: '2',
@@ -43,7 +45,8 @@ const recipes = [
     ],
     servings: 6,
     description: "Taco-seasoned chicken over lettuce with corn, beans, and queso.",
-    mealType: [MealTypes.D, MealTypes.L]
+    mealType: [MealTypes.D, MealTypes.L],
+    tags: []
   },
   {
     id: '3',
@@ -56,10 +59,11 @@ const recipes = [
     ],
     servings: 6,
     description: "Eggs, chicken sausage, and fruit.",
-    mealType: [MealTypes.BF]
+    mealType: [MealTypes.BF],
+    tags: [Tags.SV]
   },
   {
-    id: 4,
+    id: '4',
     name: "Chocolate Raspberry Oats",
     ingredients: [
       { name: "Oatmeal", quantity: 6, unit: Units.SRV },
@@ -72,7 +76,49 @@ const recipes = [
     ],
     servings: 6,
     description: "Oats with rasperries, dark chocolate, yogurt, and granola.",
-    mealType: [MealTypes.BF]
+    mealType: [MealTypes.BF],
+    tags: [Tags.SW]
+  },
+    {
+    id: '5',
+    name: "Avocado Rice Cake",
+    ingredients: [
+      { name: "Avocado", quantity: 3, unit: Units.PC },
+      { name: "Rice Cake", quantity: 12, unit: Units.PC },
+      { name: "Egg", quantity: 12, unit: Units.PC },
+      { name: "Strawberries", quantity: 1, unit: Units.LB },
+    ],
+    servings: 6,
+    description: "Soft-boiled eggs on avocado rice cakes with fruit.",
+    mealType: [MealTypes.BF],
+    tags: [Tags.SV]
+  }, 
+    {
+    id: '6',
+    name: "Berry Yogurt Bowl",
+    ingredients: [
+      { name: "Frozen Mixed Berries", quantity: 1, unit: Units.CNTR },
+      { name: "Yogurt", quantity: 2, unit: Units.CNTR },
+      { name: "Rice Cake", quantity: 6, unit: Units.PC },
+      { name: "Egg", quantity: 12, unit: Units.PC },
+    ],
+    servings: 6,
+    description: "Mixed berry yogurt bowl with soft-boiled eggs.",
+    mealType: [MealTypes.BF],
+    tags: [Tags.SW]
+  },
+    {
+    id: '7',
+    name: "Sausage, Peppers, and Onions",
+    ingredients: [
+      { name: "Smoked Sausage", quantity: 10, unit: Units.PC },
+      { name: "Bell Pepper", quantity: 2, unit: Units.PC },
+      { name: "Onion", quantity: 1, unit: Units.PC }
+    ],
+    servings: 6,
+    description: "Sausages sauteed with peppers and onions.",
+    mealType: [MealTypes.D],
+    tags: [Tags.MP]
   }
 ];
 

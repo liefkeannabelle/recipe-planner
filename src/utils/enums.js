@@ -23,7 +23,12 @@ const MealTypes = Object.freeze({
   L : 'lunch',
   D : 'dinner'
 })
-// will want to add enums for tags and potentially ingredients
 
-export {Units, IngTypes, MealTypes}
+const Tags = Object.freeze({
+  SW : 'sweet',
+  SV : 'savory',
+  MP : 'meal prep'
+})
+
+export {Units, IngTypes, MealTypes, Tags}
 
