@@ -27,7 +27,17 @@ const MealTypes = Object.freeze({
 const Tags = Object.freeze({
   SW : 'sweet',
   SV : 'savory',
-  MP : 'meal prep'
+  MP : 'meal prep',
+  BWL : 'bowl',
+  HH : 'hand-held',
+  CHK : 'chicken',
+  BF : 'beef',
+  FSH : 'seafood',
+  CLD : 'cold',
+  WRM : 'warm',
+  MEX : 'mexican',
+  ASN : 'asian',
+  MED : 'mediterranean'
 })
 
 export {Units, IngTypes, MealTypes, Tags}

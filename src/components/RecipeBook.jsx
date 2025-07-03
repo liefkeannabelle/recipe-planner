@@ -4,20 +4,22 @@ import RecipeCard from './RecipeCard';
 import MultiSelectDropdown from '../utils/selection';
 
 function RecipeBook({ recipes, onAddToMealPlan }) {
-    const allTags = [];
-    Object.values(Tags).forEach(tag =>{
-        allTags.push({value: tag, label: tag.charAt(0).toUpperCase() + tag.slice(1)})
-    })
-
     const [selectedMealType, setSelectedMealType] = useState('breakfast');
-    const [selectedTags, setSelectedTags] = useState(allTags);
+    const [selectedTags, setSelectedTags] = useState([]);
     const selectedValues = selectedTags.map(tag => tag.value);
 
     let filteredRecipes = recipes.filter(recipe => recipe.mealType.includes(selectedMealType));
     console.log("first filter: ", filteredRecipes);
+        recipes.forEach(recipe => {
+        console.log('Recipe:', recipe.name);
+        console.log('Has all selected tags:', selectedValues.every(tag => recipe.tags.includes(tag)));
+    });
+
     filteredRecipes = filteredRecipes.filter(recipe =>
-        recipe.tags.some(tag => selectedValues.includes(tag))
-    ); 
+         selectedValues.every(tag => recipe.tags.includes(tag))
+    );
+
+    console.log("second filter: ", filteredRecipes);
 
     return (
         <div>

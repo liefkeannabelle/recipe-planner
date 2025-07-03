@@ -27,7 +27,7 @@ const ingredientBank = [
     {name: "Frozen Mixed Berries", type: IngTypes.P, unit: Units.CNTR, calories: 500, protein: 0},
     {name: "Green Onion", type: IngTypes.P, unit: Units.CNTR, calories: 30, protein: 0},
     {name: "Greens", type: IngTypes.P, unit: Units.CNTR, calories: 50, protein: 0},
-    {name: "Kiwis", type: IngTypes.P, unit: Units.PC, calories: 45, protein: 0},
+    {name: "Kiwi", type: IngTypes.P, unit: Units.PC, calories: 45, protein: 0},
     {name: "Onion", type: IngTypes.P, unit: Units.PC, calories: 150, protein: 0},
     {name: "Raspberries", type: IngTypes.P, unit: Units.PT, calories: 150, protein: 0},
     {name: "Strawberries", type: IngTypes.P, unit: Units.LB, calories: 150, protein: 0},
