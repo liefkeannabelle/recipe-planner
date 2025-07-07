@@ -33,6 +33,7 @@ const Tags = Object.freeze({
   CHK : 'chicken',
   BF : 'beef',
   FSH : 'seafood',
+  TRKY : 'turkey',
   CLD : 'cold',
   WRM : 'warm',
   MEX : 'mexican',

@@ -111,14 +111,51 @@ const recipes = [
     id: '7',
     name: "Sausage, Peppers, and Onions",
     ingredients: [
-      { name: "Smoked Chicken Sausage", quantity: 10, unit: Units.PC },
+      { name: "Spicy Chicken Sausage", quantity: 10, unit: Units.PC },
       { name: "Bell Pepper", quantity: 2, unit: Units.PC },
-      { name: "Onion", quantity: 1, unit: Units.PC }
+      { name: "Onion", quantity: 1.5, unit: Units.PC },
+      { name: "Baby Potatoes", quantity: 2, unit: Units.CNTR}
     ],
     servings: 6,
-    description: "Sausages sauteed with peppers and onions.",
-    mealType: [MealTypes.D],
+    description: "Sausages sauteed with peppers and onions with roasted baby potatoes.",
+    mealType: [MealTypes.L, MealTypes.D],
     tags: [Tags.MP, Tags.BWL, Tags.CHK, Tags.WRM]
+  },
+    {
+    id: '8',
+    name: "Mixed Berry Peanut Butter Oats",
+    ingredients: [
+      { name: "Oatmeal", quantity: 6, unit: Units.SRV },
+      { name: "Yogurt", quantity: 6, unit: Units.SRV },
+      { name: "Frozen Mixed Berries", quantity: 2, unit: Units.CNTR },
+      { name: "Almond Milk", quantity: 3, unit: Units.SRV },
+      { name: "Chocolate Powdered Peanut Butter", quantity: 6, unit: Units.SRV },
+      { name: "Granola", quantity: 6, unit: Units.SRV}
+    ],
+    servings: 6,
+    description: "Chocolate peanut butter oats topped with yogurt, berries, and granola.",
+    mealType: [MealTypes.BF],
+    tags: [Tags.BF, Tags.WRM, Tags.SW, Tags.BWL]
+  },
+    {
+    id: '9',
+    name: "Turkey Meatball Pita",
+    ingredients: [
+      { name: "Ground Turkey", quantity: 2, unit: Units.LB},
+      { name: "Onion", quantity: 0.5, unit: Units.PC },
+      { name: "Egg", quantity: 1, unit: Units.PC },
+      { name: "Breadcrumbs", quantity: 1, unit: Units.CUP },
+      { name: "Yogurt", quantity: 1, unit: Units.SRV},
+      { name: "Dill", quantity: 1, unit: Units.CNTR},
+      { name: "Greens", quantity: 1, unit: Units.CNTR},
+      { name: "Cucumber", quantity: 1, unit: Units.PC},
+      { name: "Pita", quantity: 6, unit: Units.SRV},
+      { name: "Lemon", quantity: 1, unit: Units.PC}
+    ],
+    servings: 6,
+    description: "Mediterranean turkey meatballs with tzatziki in a pita.",
+    mealType: [MealTypes.D],
+    tags: [Tags.HH, Tags.MED, Tags.TRKY]
   }
 ];
 
